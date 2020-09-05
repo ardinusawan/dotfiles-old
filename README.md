@@ -20,21 +20,22 @@
 1. Install [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
 
 1. Install nodejs 12.18.3
-```sh
-asdf install nodejs 12.18.3
-```
+    ```sh
+    asdf install nodejs 12.18.3
+    ```
 
 1. Make that version of nodejs global
-```sh
-asdf global nodejs 12.18.3
-```
+    ```sh
+    asdf global nodejs 12.18.3
+    ```
+
 1. Copy config file on this folder to their places.
 
 1. Open nvim, execute
-```sh
-:PlugInstall
-:CocInstall coc-json coc-tsserver
-```
+    ```sh
+    :PlugInstall
+    :CocInstall coc-json coc-tsserver
+    ```
 
 1. Install and config [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
