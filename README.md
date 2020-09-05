@@ -13,7 +13,28 @@
 
 1. Install [amix/vimrc](https://github.com/amix/vimrc) (awesome version)
 
+1. Install [coc.nvim](https://github.com/neoclide/coc.nvim)
+
+1. Install [asdf](https://asdf-vm.com)
+
+1. Install [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
+
+1. Install nodejs 12.18.3
+```sh
+asdf install nodejs 12.18.3
+```
+
+1. Make that version of nodejs global
+```sh
+asdf global nodejs 12.18.3
+```
 1. Copy config file on this folder to their places.
+
+1. Open nvim, execute
+```sh
+:PlugInstall
+:CocInstall coc-json coc-tsserver
+```
 
 1. Install and config [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
 
