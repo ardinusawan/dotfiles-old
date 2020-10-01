@@ -11,6 +11,8 @@
 
 1. Install ack `brew install ack`
 
+1. Install ctags `brew install ctags`
+
 1. Install [amix/vimrc](https://github.com/amix/vimrc) (awesome version)
 
 1. Install [coc.nvim](https://github.com/neoclide/coc.nvim)
