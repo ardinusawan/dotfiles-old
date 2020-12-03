@@ -142,3 +142,14 @@ alias wa="cd /Users/dewa.putu/Work/groceries/aayina"
 
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"
+source /Users/dewa.putu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
+export JAVA_HOME_15=$(/usr/libexec/java_home -v15)
+# Java 8
+export JAVA_HOME=$JAVA_HOME_8
+#
+# Java 11
+# export JAVA_HOME=$JAVA_HOME_11
+
+

@@ -26,6 +26,12 @@ Plug 'christoomey/vim-tmux-navigator'
 " https://github.com/fatih/vim-go
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+" clojure
+Plug 'tpope/vim-salve'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-fireplace'
+
 " Initialize plugin system
 call plug#end()
 
