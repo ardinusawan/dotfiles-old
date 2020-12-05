@@ -199,3 +199,11 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 " Enter to open current tab to new tab
 nmap <CR> :tabedit %<CR>
 
+" GoTest
+nnoremap <leader>gt :GoTest<CR>
+
+" GoTestFunc
+nnoremap <leader>gt :GoTestFunc<CR>
+
+" GoDef
+nnoremap <leader>gd :GoDef<CR>
