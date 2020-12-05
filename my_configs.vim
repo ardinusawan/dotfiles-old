@@ -203,7 +203,7 @@ nmap <CR> :tabedit %<CR>
 nnoremap <leader>gt :GoTest<CR>
 
 " GoTestFunc
-nnoremap <leader>gt :GoTestFunc<CR>
+nnoremap <leader>gtf :GoTestFunc<CR>
 
 " GoDef
 nnoremap <leader>gd :GoDef<CR>
