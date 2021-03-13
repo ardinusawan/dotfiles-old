@@ -36,7 +36,7 @@
 1. Open nvim, execute
     ```sh
     :PlugInstall
-    :CocInstall coc-json coc-tsserver
+    :CocInstall coc-json coc-tsserver coc-go
     ```
 
 1. Install and config [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)
