@@ -139,6 +139,7 @@ alias wlo="cd /Users/dewa.putu/Work/groceries/lollipop"
 alias wo="cd /Users/dewa.putu/Work/groceries/oracle"
 alias wm="cd /Users/dewa.putu/Work/groceries/marvin"
 alias wa="cd /Users/dewa.putu/Work/groceries/aayina"
+alias wmc="cd /Users/dewa.putu/Work/groceries/martian-cms"
 
 # Ctags
 alias ctags="`brew --prefix`/bin/ctags"

@@ -13,7 +13,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fireplace'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 
 Plug 'wakatime/vim-wakatime'
 
@@ -24,13 +24,18 @@ Plug 'iamcco/markdown-preview.nvim', { 'do': 'cd app & yarn install'  }
 Plug 'christoomey/vim-tmux-navigator'
 
 " https://github.com/fatih/vim-go
-Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'fatih/vim-go'
+
+Plug 'christianrondeau/vim-base64'
 
 " clojure
 Plug 'tpope/vim-salve'
 Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fireplace'
+
+" HTML
+Plug 'mattn/emmet-vim'
 
 " Initialize plugin system
 call plug#end()
@@ -193,6 +198,13 @@ nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
+" disable vim-go :GoDef short cut (gd)
+" this is handled by LanguageClient [LC]
+let g:go_def_mapping_enabled = 0
+
+" End of COC config
+" -----------------------------
+
 " Automatically quit vim if NERDTree is last and only buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
@@ -207,3 +219,6 @@ nnoremap <leader>gtf :GoTestFunc<CR>
 
 " GoDef
 nnoremap <leader>gd :GoDef<CR>
+
+" go-vim autoimport
+let g:go_fmt_command = "goimports"
