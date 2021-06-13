@@ -145,12 +145,19 @@ alias wmc="cd /Users/dewa.putu/Work/groceries/martian-cms"
 alias ctags="`brew --prefix`/bin/ctags"
 source /Users/dewa.putu/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-export JAVA_HOME_8=$(/usr/libexec/java_home -v1.8)
-export JAVA_HOME_15=$(/usr/libexec/java_home -v15)
+export JAVA_HOME_8=$(/usr/libexec/java_home -v 1.8.0_291)
+export JAVA_HOME_15=$(/usr/libexec/java_home -v 15)
 # Java 8
 export JAVA_HOME=$JAVA_HOME_8
 #
 # Java 11
 # export JAVA_HOME=$JAVA_HOME_11
 
+# homebrew autocomplete
+if type brew &>/dev/null; then
+  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  autoload -Uz compinit
+  compinit
+fi
 

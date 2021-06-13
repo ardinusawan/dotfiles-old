@@ -37,7 +37,17 @@ Plug 'tpope/vim-fireplace'
 " HTML
 Plug 'mattn/emmet-vim'
 
-" Initialize plugin system
+" Js
+Plug 'pangloss/vim-javascript'
+"Plug w0rp/ale
+
+" Autoformat
+"Plug 'Chiel92/vim-autoformat'
+
+" pretier
+Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+"" Initialize plugin system
 call plug#end()
 
 :set number
@@ -222,3 +232,19 @@ nnoremap <leader>gd :GoDef<CR>
 
 " go-vim autoimport
 let g:go_fmt_command = "goimports"
+
+" Set whitespace for js
+autocmd FileType javascript setlocal ts=2 sts=2 sw=2
+
+" vim autoformat
+let g:python3_host_prog="~/.asdf/shims/python3"
+
+" ale
+"let g:ale_fixers = {}
+"let g:ale_fixers.javascript = ['eslint']
+"let g:ale_fix_on_save = 1
+
+" prettier
+nmap <Leader>py <Plug>(Prettier)
+let g:prettier#exec_cmd_async = 1
+let g:prettier#autoformat_require_pragma = 0
