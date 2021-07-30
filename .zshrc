@@ -117,6 +117,8 @@ export CPPFLAGS="-I/usr/local/opt/openssl@1.1/include"
 # Android
 export ANDROID_HOME=/Users/$USER/Library/Android/sdk
 export PATH=${PATH}:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export ANDROID_SDK=$HOME/Library/Android/sdk
+export PATH=$ANDROID_SDK/emulator:$ANDROID_SDK/tools:$PATH
 
 # The next line updates PATH for the Google Cloud SDK.
 if [ -f '/Users/dewa.putu/Work/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/dewa.putu/Work/google-cloud-sdk/path.zsh.inc'; fi

@@ -34,11 +34,15 @@ Plug 'tpope/vim-projectionist'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-fireplace'
 
+" rails
+Plug 'tpope/vim-rails'
+
 " HTML
 Plug 'mattn/emmet-vim'
 
 " Js
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 "Plug w0rp/ale
 
 " Autoformat
@@ -46,6 +50,9 @@ Plug 'pangloss/vim-javascript'
 
 " pretier
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 "" Initialize plugin system
 call plug#end()
