@@ -33,10 +33,15 @@
 
 1. Copy config file on this folder to their places.
 
+1. Install solargraph
+    ```
+    gem install solargraph
+    ```
+
 1. Open nvim, execute
     ```sh
     :PlugInstall
-    :CocInstall coc-json coc-tsserver coc-go
+    :CocInstall coc-json coc-tsserver coc-go coc-jedi
     ```
 
 1. Install and config [vim-tmux-navigator](https://github.com/christoomey/vim-tmux-navigator)

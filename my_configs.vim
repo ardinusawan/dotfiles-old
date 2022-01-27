@@ -255,3 +255,5 @@ let g:python3_host_prog="~/.asdf/shims/python3"
 nmap <Leader>py <Plug>(Prettier)
 let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat_require_pragma = 0
+
+let g:coc_global_extensions = ['coc-solargraph']
