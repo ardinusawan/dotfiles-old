@@ -51,7 +51,7 @@ Plug 'leafgarland/typescript-vim'
 " pretier
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 
-Plug 'SirVer/ultisnips'
+" Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
 "" Initialize plugin system
