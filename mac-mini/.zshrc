@@ -107,3 +107,6 @@ export PATH=/opt/homebrew/bin:$PATH
 # Fix gpg issue
 # https://stackoverflow.com/a/55993078/4154982
 export GPG_TTY=$(tty)
+
+export LC_CTYPE=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
