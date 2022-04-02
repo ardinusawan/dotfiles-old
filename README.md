@@ -62,4 +62,6 @@
 
 1. Config [tmux vim-binding](https://www.rushiagr.com/blog/2016/06/16/everything-you-need-to-know-about-tmux-copy-pasting/)
 
-1. Setup [git gpg](https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e)
+1. [Optional] Setup [git gpg](https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e)
+
+1. [Git Delta](https://github.com/dandavison/delta)
