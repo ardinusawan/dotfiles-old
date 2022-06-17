@@ -110,3 +110,9 @@ export GPG_TTY=$(tty)
 
 export LC_CTYPE=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+
+export PATH=/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH
+
+export PATH=/$HOME/.composer/vendor/bin:$PATH
+
+alias sail='[ -f sail ] && bash sail || bash vendor/bin/sail'
