@@ -54,6 +54,8 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 
+Plug 'hexdigest/gounit-vim'
+
 "" Initialize plugin system
 call plug#end()
 
@@ -90,10 +92,10 @@ endif
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
 " other plugin before putting this into your config.
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
+" inoremap <silent><expr> <TAB>
+"       \ pumvisible() ? "\<C-n>" :
+"       \ <SID>check_back_space() ? "\<TAB>" :
+"       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
@@ -257,3 +259,5 @@ let g:prettier#exec_cmd_async = 1
 let g:prettier#autoformat_require_pragma = 0
 
 let g:coc_global_extensions = ['coc-solargraph']
+
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"

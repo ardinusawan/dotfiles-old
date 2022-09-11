@@ -4,6 +4,7 @@
     email = ardi.nusawan13@gmail.com
 [core]
     pager = delta
+	autocrlf = input
 
 [interactive]
     diffFilter = delta --color-only
@@ -16,3 +17,5 @@
 
 [diff]
     colorMoved = default
+[init]
+	defaultBranch = main
