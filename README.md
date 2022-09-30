@@ -17,6 +17,8 @@
 
 1. Install [amix/vimrc](https://github.com/amix/vimrc) (awesome version)
 
+1. [migrate-vim-to-nvim](https://neovim.io/doc/user/nvim.html#nvim-from-vim)
+
 1. Install [asdf](https://asdf-vm.com)
 
 1. Install [asdf-nodejs](https://github.com/asdf-vm/asdf-nodejs)
@@ -31,6 +33,13 @@
     asdf global nodejs 16.14.0
     ```
 
+1. Install Plug
+    ```
+
+    sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+           https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+    ```
+
 1. Install [coc.nvim](https://github.com/neoclide/coc.nvim)
     ```sh
     npm install --global yarn
@@ -42,8 +51,6 @@
     ```
     gem install solargraph
     ```
-
-1. [migrate-vim-to-nvim](https://neovim.io/doc/user/nvim.html#nvim-from-vim)
 
 1. Open nvim, execute
     ```sh
