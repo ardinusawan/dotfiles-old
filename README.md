@@ -72,3 +72,5 @@
 1. [Optional] Setup [git gpg](https://gist.github.com/Beneboe/3183a8a9eb53439dbee07c90b344c77e)
 
 1. [Git Delta](https://github.com/dandavison/delta)
+
+1. [oh-my-zsh plugin](https://gist.github.com/n1snt/454b879b8f0b7995740ae04c5fb5b7df)
